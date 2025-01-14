@@ -1,0 +1,133 @@
+/* Updated CSS for .logo */
+
+
+@keyframes background-zoom {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1); /* Slightly zoom in */
+  }
+}
+
+.background-zoom-effect {
+  animation: background-zoom 2s forwards ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+  position: absolute;
+  width: 16vw; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  top: 3vh; /* Position from the top */
+ 
+  padding: 0; /* Remove unnecessary padding */
+  z-index: 1000; /* Keep logo on top */
+}
+
+
+
+.logo_lefttop{                           
+  position: absolute;
+  width: 13vw; /* Responsive width */
+  height: 5vw; /* Maintain aspect ratio */  
+  top: 3vh; /* Position from the top */
+  left: 2.1vw; /* Position from the left */
+  padding: 0; /* Remove unnecessary padding */
+  z-index: 1000; /* Keep logo on top */
+}
+
+.logo_person {
+  position: relative; /* or absolute/fixed depending on the layout */
+  top: 15.5rem;
+  right: 23rem;
+  height: 30rem;
+  animation: shrinkAnimation 1.5s ease-out;
+}
+
+@keyframes shrinkAnimation {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  100% {
+    transform: scale(0.95); /* Slightly smaller size */
+  }
+}
+
+
+
+  .logo_big{
+    position: absolute;
+    width: 28 vw; /* Responsive width */
+    height: 20vw; /* Maintain aspect ratio */
+    top: 25vh; /* Position from the top */
+    left: 2.1vw; /* Position from the left */
+    padding: 0; /* Remove unnecessary padding */
+    z-index: 1000; /* Keep logo on top */
+  }
+
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.5); /* Start smaller (50% of original size) */
+      opacity: 0; /* Start fully transparent */
+    }
+    100% {
+      transform: scale(1); /* End at normal size */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Apply the scale-up animation to the image */
+  .logo_big  {
+    animation: scaleUp 2s ease-in-out; /* 2s duration, easing for smooth effect */
+    position: absolute;
+    width: 28 vw; /* Responsive width */
+    height: 20vw; /* Maintain aspect ratio */
+    top: 25vh; /* Position from the top */
+    left: 2.1vw; /* Position from the left */
+    padding: 0; /* Remove unnecessary padding */
+    z-index: 1000; /* Keep logo on top */
+  }
+  
+
+
+  .logo_not{
+   
+  margin-left: 21rem;
+  padding: 1rem;
+    
+  }
+
+  .logo_com{
+    margin-left: 24rem;
+    margin-top: 15rem;
+  }
+  
+
+
+
+
+
+
+
+
+/* Ensure the parent container has a position set */
+.container {
+  position: relative; /* Allows .logo to position correctly */
+}
