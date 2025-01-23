@@ -16,10 +16,13 @@
 
 
 
-
-
-
-
+ .logo_acc{
+               
+ position: absolute;
+ padding: 1rem;
+ left: 200vh;
+ }
+        
 
 
 
@@ -53,11 +56,11 @@
 }
 
 .logo_person {
-  position: relative; /* or absolute/fixed depending on the layout */
+  position: absolute; /* or absolute/fixed depending on the layout */
   top: 15.5rem;
-  right: 23rem;
+  right: 35rem;
   height: 30rem;
-  animation: shrinkAnimation 1.5s ease-out;
+  animation: shrinkAnimation 1s ease-out;
 }
 
 @keyframes shrinkAnimation {
@@ -100,7 +103,7 @@
     width: 28 vw; /* Responsive width */
     height: 20vw; /* Maintain aspect ratio */
     top: 25vh; /* Position from the top */
-    left: 2.1vw; /* Position from the left */
+    left: 36vw; /* Position from the left */
     padding: 0; /* Remove unnecessary padding */
     z-index: 1000; /* Keep logo on top */
   }
@@ -109,14 +112,18 @@
 
   .logo_not{
    
-  margin-left: 21rem;
+ position: absolute;
   padding: 1rem;
+  left: 193vh;
     
   }
 
   .logo_com{
-    margin-left: 24rem;
-    margin-top: 15rem;
+      
+ position: absolute;
+
+ top:40vh;
+ left: 200vh;
   }
   
 
